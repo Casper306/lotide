@@ -54,5 +54,5 @@ return results;
 //   }
 // });
 const results3 = map(words, word => word[2])
- assertArraysEqual(results3, ['o','n',undefined,'j','m']);
+assertArraysEqual(results3, ['o','n',undefined,'j','m']);
 //console.log(results3);
