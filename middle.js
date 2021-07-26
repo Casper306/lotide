@@ -1,14 +1,5 @@
-const assertArraysEqual = function(arr1, arr2){
-  if (arr1.length !== arr2.length ){
-    return false;
-  }
-  for (let index = 0; index < arr1.length; index++) {
-    if (arr1[index] !== arr2[index]){
-        return false;
-    }    
-  }
-  return true;
-}
+const assertArraysEqual = require('./assertArraysEqual');
+
 
 const middle =function (arr) {
   if (!arr.length | arr.length <= 2)
@@ -25,13 +16,9 @@ const middle =function (arr) {
   }
 }
 
+module.exports = middle;
 
-console.log(middle([1])) // => []
-console.log(middle([1, 2])) // => []
-console.log(middle([1, 2, 3]))// => [2]
-console.log(middle([1, 2, 3, 4, 5])) // => [3]
-console.log(middle([1, 2, 3, 4])) // => [2, 3]
-console.log(middle([1, 2, 3, 4, 5, 6])) // => [3, 4]
+
 
 
 // Math.floor  https://developer.mozilla.org/zh-TW/docs/orphaned/Web/JavaScript/Reference/Global_Objects/Math/floor
