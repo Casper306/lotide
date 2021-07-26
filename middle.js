@@ -14,9 +14,11 @@ const middle =function (arr) {
       arr[mid],
     ];
   }
-}
+};
 
 module.exports = middle;
+
+
 
 
 
